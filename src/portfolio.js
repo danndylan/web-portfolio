@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Web Developer with 5+ years of experience specializing in e-commerce platforms and API integrations. Proficient in JavaScript, PHP, MySQL, and RESTful APIs. Currently working as a Computer Technician for 3 years, providing tech solutions to government and private clients.",
   resumeLink:
-    "https://drive.google.com/file/d/1-9gVNHoFIVcH2Xuw0LtzY52akx_PFqrq/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1VrhRLiCh8SRpeQFN2s4U32mFIWld9bwr/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -48,7 +48,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "EXPERIENCED WITH JAVASCRIPT AND PHP BACKEND FRAMEWORKS.",
+  subTitle:
+    "EXPERIENCED WITH JAVASCRIPT AND PHP BACKEND FRAMEWORKS AND JUST ABOUT ANYTHING WITH COMPUTERS!",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -68,24 +69,44 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "nodejs",
+      skillName: "NodeJs",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "npm",
+      skillName: "NPM",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL Database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "html-5",
+      skillName: "HTML-5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-brands fa-linux"
+    },
+    {
+      skillName: "Windows",
+      fontAwesomeClassname: "fab fa-brands fa-windows"
+    },
+    {
+      skillName: "MacOS",
+      fontAwesomeClassname: "fab fa-brands fa-apple"
+    },
+    {
+      skillName: "Cisco Meraki",
+      fontAwesomeClassname: "fa fa-solid fa-wifi"
+    },
+    {
+      skillName: "Genetec Security",
+      fontAwesomeClassname: "fab fa-wifi"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -134,29 +155,44 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Mid-Level Web Developer",
+      company: "Cafe24 Philippines, Inc.",
+      companylogo: require("./assets/images/rounded_logo_filled.jpg"),
+      date: "August 2017 – April 2022",
+      desc: "Pasig, Metro Manila",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and developed features for Cafe24 e-malls using multiple programming languages, utilizing various frameworks and libraries.",
+        "Led development efforts on API integrations and performance optimizations for Cafe24 Recipe platform focused on automating tasks in e-mall applications.",
+        "Managed a small team of junior developers, delegating tasks and ensuring code quality and timely project delivery.",
+        "Conducted code reviews, project timeline estimations, and contributed to the evolution of internal coding standards and best practices.",
+        "Collaborated with senior developers to develop features and improvements in existing systems, both client facing apps and internal tools.",
+        "Undergone training by developing features using PHP, JavaScript, MySQL, HTML and CSS."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full-Stack Developer",
+      company: "Anida",
+      companylogo: require("./assets/images/anida.jpg"),
+      date: "July 2022 – August 2022",
+      desc: "Toronto, ON",
+      descBullets: [
+        "Developed and maintained the organization's official website using Node.js.",
+        "Refactored database schema and improved the performance and scalability of the back-end infrastructure."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Computer Technician",
+      company: "DCR Systems Group Inc.",
+      companylogo: require("./assets/images/dcr.png"),
+      date: "August 2022 – Present",
+      desc: "Toronto, ON",
+      descBullets: [
+        "Update, image, and configure software and hardware of various computer devices for different scale of orders, following provided work instructions and quality control documents.",
+        "Validate and improve technical parts of work instructions from clients and internal teams.",
+        "Maintaining documentation of all tasks completed in an order to ensure consistency.",
+        "Providing timeline estimates for tasks in large orders.",
+        "Supported lab functions in the warehouse, assisting with device management and other duties."
+      ]
     }
   ]
 };
@@ -184,19 +220,6 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://anida.org/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/cafe24.webp"),
-      projectName: "Cafe24",
-      projectDesc:
-        "Designed and developed features for e-malls such as banner management app for admins.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://global.cafe24.com/"
         }
         //  you can add extra buttons here.
       ]
