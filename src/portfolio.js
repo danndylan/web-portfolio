@@ -157,7 +157,7 @@ const workExperiences = {
     {
       role: "Mid-Level Web Developer",
       company: "Cafe24 Philippines, Inc.",
-      companylogo: require("./assets/images/rounded_logo_filled.jpg"),
+      companylogo: require("./assets/images/rounded_logo_filled.png"),
       date: "August 2017 – April 2022",
       desc: "Pasig, Metro Manila",
       descBullets: [
@@ -172,7 +172,7 @@ const workExperiences = {
     {
       role: "Full-Stack Developer",
       company: "Anida",
-      companylogo: require("./assets/images/anida.jpg"),
+      companylogo: require("./assets/images/anida.png"),
       date: "July 2022 – August 2022",
       desc: "Toronto, ON",
       descBullets: [
