@@ -157,7 +157,7 @@ const workExperiences = {
     {
       role: "Mid-Level Web Developer",
       company: "Cafe24 Philippines, Inc.",
-      companylogo: require("./assets/images/rounded_logo_filled.png"),
+      companylogo: require("./assets/images/cafe24.png"),
       date: "August 2017 – April 2022",
       desc: "Pasig, Metro Manila",
       descBullets: [
