@@ -94,6 +94,8 @@ if (USE_GITHUB_DATA === "true") {
   req.end();
 }
 
+// Disable fetching Medium blogs
+/**
 if (MEDIUM_USERNAME !== undefined) {
   console.log(`Fetching Medium blogs data for ${MEDIUM_USERNAME}`);
   const options = {
@@ -128,3 +130,4 @@ if (MEDIUM_USERNAME !== undefined) {
 
   req.end();
 }
+*/
