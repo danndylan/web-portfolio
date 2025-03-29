@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "Web Developer with 5+ years of experience specializing in e-commerce platforms and API integrations. Proficient in JavaScript, PHP, MySQL, and RESTful APIs. Currently working as a Computer Technician for 3 years, providing tech solutions to government and private clients.",
   resumeLink:
-    "https://drive.google.com/file/d/1VrhRLiCh8SRpeQFN2s4U32mFIWld9bwr/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1f0SQSysQ5tYbcQxqnTAqrAK6ucAR0DaT/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -51,7 +51,9 @@ const skillsSection = {
   subTitle:
     "EXPERIENCED IN PROGRAMMING AND JUST ABOUT ANYTHING WITH COMPUTERS!",
   skills: [
-    emoji("⚡ Develop web applications"),
+    emoji(
+      "⚡ Develop web applications - professional work or personal projects"
+    ),
     emoji(
       "⚡ Configure and troubleshoot various computer devices from servers to mobile phones"
     )
@@ -60,7 +62,7 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+  programmingSkills: [
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -74,7 +76,19 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-npm"
     },
     {
+      skillName: "PHP",
+      fontAwesomeClassname: "fab fa-php"
+    },
+    {
+      skillName: "Laravel",
+      fontAwesomeClassname: "fab fa-laravel"
+    },
+    {
       skillName: "SQL Database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Redis",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -85,6 +99,26 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git"
+    }
+  ],
+  managementSkills: [
+    {
+      skillName: "Microsoft Office",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "JIRA",
+      fontAwesomeClassname: "fab fa-jira"
+    },
+    {
+      skillName: "Confluence",
+      fontAwesomeClassname: "fab fa-confluence"
+    }
+  ],
+  technicianSkills: [
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-brands fa-linux"
@@ -106,8 +140,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fa fa-solid fa-user-shield"
     },
     {
-      skillName: "Genetec Security",
-      fontAwesomeClassname: "fa fa-solid fa-user-shield"
+      skillName: "Axis Cameras",
+      fontAwesomeClassname: "fa fa-solid fa-video"
+    },
+    {
+      skillName: "HP Servers",
+      fontAwesomeClassname: "fa fa-solid fa-server"
+    },
+    {
+      skillName: "NCR Point of Sale",
+      fontAwesomeClassname: "fa fa-solid fa-cash-register"
+    },
+    {
+      skillName: "Printers",
+      fontAwesomeClassname: "fa fa-solid fa-print"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -135,12 +181,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend",
-      progressPercentage: "90%"
+      Stack: "Backend Programming",
+      progressPercentage: "80%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "70%"
+      Stack: "Operating Systems",
+      progressPercentage: "90%"
     },
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -203,7 +249,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on

@@ -1,6 +1,8 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
+import ProgrammingSkill from "../../components/softwareSkills/ProgrammingSkill";
+import ManagementSkill from "../../components/softwareSkills/ManagementSkill";
+import TechnicianSkill from "../../components/softwareSkills/TechnicianSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
@@ -43,7 +45,37 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {"Programming"}
+            </p>
+            <ProgrammingSkill />
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {"Hardware and Software Systems"}
+            </p>
+            <TechnicianSkill />
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {"Management"}
+            </p>
+            <ManagementSkill />
+
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
