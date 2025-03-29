@@ -49,14 +49,11 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "EXPERIENCED WITH JAVASCRIPT AND PHP BACKEND FRAMEWORKS AND JUST ABOUT ANYTHING WITH COMPUTERS!",
+    "EXPERIENCED IN PROGRAMMING AND JUST ABOUT ANYTHING WITH COMPUTERS!",
   skills: [
+    emoji("⚡ Develop web applications"),
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Configure and troubleshoot various computer devices from servers to mobile phones"
     )
   ],
 
@@ -106,7 +103,11 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "Genetec Security",
-      fontAwesomeClassname: "fab fa-wifi"
+      fontAwesomeClassname: "fa fa-solid fa-user-shield"
+    },
+    {
+      skillName: "Genetec Security",
+      fontAwesomeClassname: "fa fa-solid fa-user-shield"
     }
   ],
   display: true // Set false to hide this section, defaults to true
