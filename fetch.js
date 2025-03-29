@@ -22,7 +22,6 @@ if (USE_GITHUB_DATA === "true") {
   }
 
   console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
-  alert("test");
   var data = JSON.stringify({
     query: `
 {
