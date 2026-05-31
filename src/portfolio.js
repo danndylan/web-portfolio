@@ -23,9 +23,9 @@ const greeting = {
   username: "Dann Dylan Del Prado",
   title: "Dann Dylan Del Prado",
   subTitle:
-    "Web Developer with 5+ years of experience specializing in e-commerce platforms and API integrations. Proficient in JavaScript, PHP, MySQL, and RESTful APIs. Currently working as a Computer Technician for 3 years, providing tech solutions to government and private clients.",
+    "CompTIA A+ certified with 9 years of experience in IT, specializing in hardware and software configuration, OS image deployment, and technical services. Strong background in programming with experience building and maintaining web-based solutions.",
   resumeLink:
-    "https://drive.google.com/file/d/1f0SQSysQ5tYbcQxqnTAqrAK6ucAR0DaT/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1SQGT2-RYeMwZWsZ_FnieFHk1HcT6DeFH/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -52,10 +52,10 @@ const skillsSection = {
     "EXPERIENCED IN PROGRAMMING AND JUST ABOUT ANYTHING WITH COMPUTERS!",
   skills: [
     emoji(
-      "⚡ Develop web applications - professional work or personal projects"
+      "⚡ Configure and troubleshoot various computer devices from servers to mobile phones"
     ),
     emoji(
-      "⚡ Configure and troubleshoot various computer devices from servers to mobile phones"
+      "⚡ Develop web applications - professional work or personal projects"
     )
   ],
 
@@ -181,16 +181,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Backend Programming",
+      Stack: "Web Development",
       progressPercentage: "80%"
     },
     {
-      Stack: "Operating Systems",
+      Stack: "Operating Systems and Hardware",
       progressPercentage: "90%"
     },
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "50%" //Insert relative proficiency in percentage
+      Stack: "Project Management", //Insert stack or technology you have experience in
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -201,6 +201,24 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      role: "Computer Services Technician II",
+      company: "Quantum Lifecycle Partners",
+      companylogo: require("./assets/images/QuantumLogoJPEG.jpg"),
+      date: "August 2022 – Present",
+      desc: "Toronto, ON",
+      descBullets: [
+        "Configure and deploy high volumes of IT equipment for 2–5 new Starbucks locations monthly, while providing device reconfiguration support for existing stores.",
+        "Deploy image and enroll thousands of laptops and Chromebooks for district school boards including York Region District School Board (YRDSB) and Toronto Catholic District School Board (TCDSB).",
+        "Update and enroll 2,000+ mobile devices annually in Samsung Knox MDM for CBI Health.",
+        "Configure hardware and BIOS setup on data center servers before deployment.",
+        "Wipe hard drives and test components of various refurbished laptop brands and models.",
+        "Review and improve technical parts of work instructions from clients and internal teams.",
+        "Maintain documentation of all tasks completed for Quality Assurance.",
+        "Provide timeline estimates of tasks in large orders for Project Managers.",
+        "Prepare Bill of Lading documents for the Shipping team."
+      ]
+    },
     {
       role: "Mid-Level Web Developer",
       company: "Cafe24 Philippines, Inc.",
@@ -226,20 +244,6 @@ const workExperiences = {
         "Developed and maintained the organization's official website using Node.js.",
         "Refactored database schema and improved the performance and scalability of the back-end infrastructure."
       ]
-    },
-    {
-      role: "Computer Technician",
-      company: "DCR Systems Group Inc.",
-      companylogo: require("./assets/images/dcr.png"),
-      date: "August 2022 – Present",
-      desc: "Toronto, ON",
-      descBullets: [
-        "Update, image, and configure software and hardware of various computer devices for different scale of orders, following provided work instructions and quality control documents.",
-        "Validate and improve technical parts of work instructions from clients and internal teams.",
-        "Maintaining documentation of all tasks completed in an order to ensure consistency.",
-        "Providing timeline estimates for tasks in large orders.",
-        "Supported lab functions in the warehouse, assisting with device management and other duties."
-      ]
     }
   ]
 };
@@ -248,7 +252,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -292,61 +296,24 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Certification 🎖️ "),
+  subtitle: "Industry certifications and technical achievements!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "CompTIA A+ (Core 1 & Core 2)",
+      subtitle: "Earned May 2026.",
+      image: require("./assets/images/compTIAA+.png"),
+      imageAlt: "CompTIA A+",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          url: "https://drive.google.com/file/d/1tAReYOLxxKuleOWq57FS604gOEJiM6jb/view?usp=drive_link"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section

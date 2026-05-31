@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
@@ -11,6 +12,7 @@ export default function GithubProfileCard({prof}) {
   } else {
     prof.hireable = "No";
   }
+  const {isDark} = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
@@ -20,7 +22,35 @@ export default function GithubProfileCard({prof}) {
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
-            <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
+            <h2 className="bio-text">{emoji(String(prof.bio))}</h2>
+            <div className="location-div">
+              <span className="desc-prof">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="16"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+                </svg>
+                {contactInfo.number}
+              </span>
+            </div>
+            <div className="location-div">
+              <span className="desc-prof">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="16"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5L4 8V6l8 5 8-5v2z" />
+                </svg>
+                {contactInfo.email_address}
+              </span>
+            </div>
             {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">
