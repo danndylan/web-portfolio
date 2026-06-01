@@ -1,10 +1,9 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
 import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
@@ -12,7 +11,6 @@ export default function GithubProfileCard({prof}) {
   } else {
     prof.hireable = "No";
   }
-  const {isDark} = useContext(StyleContext);
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
